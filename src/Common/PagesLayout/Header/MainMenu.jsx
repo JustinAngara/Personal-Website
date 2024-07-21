@@ -10,11 +10,14 @@ const MainMenu = ({ onClick }) => {
     return (
 
         <MainMenuStyled>
+
             <ul>
+
                 <li> <NavBtn pathObj = {["/", "Home"]}/> </li>
                 <li> <NavBtn pathObj = {["/course-work", "Resume"]}/> </li>
                 <li> <NavBtn pathObj = {["/staff", "Projects"]}/> </li>
                 <li> <NavBtn pathObj = {["/contact", "Contact"]}/> </li>
+                
                 <div className="socials">
                     <Button circular icon='linkedin' size='huge' onClick={()=>{
                         openInNewTab("https://www.linkedin.com/in/justinangara/");

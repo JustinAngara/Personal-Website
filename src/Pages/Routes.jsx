@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter, useNavigate } from "react-router-dom";
 
 //global styles
 import "@/Common/css/normalize.css";
@@ -19,8 +19,9 @@ import SunAndMoon from "./CourseWork/SunAndMoon/SunAndMoon.jsx";
 import Essays from "./CourseWork/Essays/Essays.jsx";
 import ResponsiveDesign from "./CourseWork/ResponsiveDesign.jsx";
 import Graphs from "./CourseWork/Graphs/Graphs.jsx"
-
+import SplashScreen from "./CourseWork/SplashScreen/Splash.jsx";
 const MyRoutes = () => {
+
     return (
         <HashRouter>
             <MediaQueryProvider>
@@ -30,6 +31,9 @@ const MyRoutes = () => {
                         <Route element={<Staff />} path="staff" />
                         <Route element={<Contact />} path="contact" />
                         <Route element={<Contact />} path = "resume"/>
+                        <Route element={<SplashScreen />} path = "splash"/>
+
+
                         <Route
                             element={<Graphs />}
                             path="course-work"
@@ -37,20 +41,24 @@ const MyRoutes = () => {
 
                             <Route element={<Essays />} path="" />
                             <Route element={<Graphs />} path="graphs" />
-                            {/* <Route
-                                element={<SunAndMoon />}
-                                path="sun-and-moon"
-                            /> */}
+
+                            <Route
+                                element={<SplashScreen />}
+                                path = "splash"
+                            />
 
                             <Route
                                 element={<ResponsiveDesign />}
                                 path="responsive"
                             />
                         </Route>
+
                     </Route>
                 </Routes>
             </MediaQueryProvider>
+
         </HashRouter>
+
     );
 };
 

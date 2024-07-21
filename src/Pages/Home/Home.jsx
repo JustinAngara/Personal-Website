@@ -4,11 +4,11 @@ import Inset from "@/Common/PagesLayout/Inset.jsx";
 import Slideshow from "./Slideshow/Slideshow";
 
 import Tabbed from "./Tabbed/Tabbed";
-import React from "react";
+import { React, useState } from "react";
 import ReactPlayer from "react-player";
 
-
 const Home = () => {
+
     return (
         <HomeStyled>
             <h1>Home</h1>

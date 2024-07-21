@@ -7,7 +7,7 @@ import logoUrl from './grad pic.png';
 const SiteLogo = () => {
     return (
         <SiteLogoStyled className='SiteLogo'>
-            <img src={ logoUrl } alt='CrossFit Decimate Logo' />
+            <img src={ logoUrl } alt='' />
         </SiteLogoStyled>
     );
 }
