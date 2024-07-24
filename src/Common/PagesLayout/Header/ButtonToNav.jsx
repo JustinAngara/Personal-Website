@@ -13,13 +13,11 @@ const ButtonToNav = ({pathObj}) => {
         <div>
             <Button basic inverted color='black' animated size='medium' onClick={()=>{
                 navigate(pathObj[0]);
-
-
             }}>
 
                 <ButtonContent visible>{pathObj[1]}</ButtonContent>
                 <ButtonContent hidden>
-                <Icon name='arrow right' />
+                    <Icon name='arrow right' />
                 </ButtonContent>
             </Button>
         </div>
@@ -41,7 +39,7 @@ const ButtonToNavStyled = styled.div`
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
-
+        display:none;
     }
     div{
 

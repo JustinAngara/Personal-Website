@@ -4,14 +4,15 @@ import styled from "styled-components";
 import Inset from "../Inset.jsx";
 import SiteLogo from "../SiteLogo/SiteLogo.jsx";
 import MainMenu from "./MainMenu.jsx";
-
+import Navbar from "./Navbar.jsx";
 const MediumLarge = () => {
     return (
         <MediumLargeStyled className="MediumLarge">
             <Inset>
                 <div className="inset">
                     <div className="menus">
-                        <MainMenu />
+                        {/* <Navbar /> */}
+                        <MainMenu></MainMenu>
                     </div>
                     <div className="logo">
                         <SiteLogo />
@@ -41,7 +42,7 @@ const MediumLargeStyled = styled.div`
         justify-content:end;
         float: right;
         padding-top:10%;
-    
+
         width: 25%;
 
     }
