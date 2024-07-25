@@ -18,8 +18,9 @@ const CourseItem = ({courseTitle, from, img, desc}) => {
         <div>
             <h1>{courseTitle}</h1>
             <h2>{from}</h2>
-            <img height = '250px' width='250px' src= {img} />
 
+            <img height = '250px' width='250px' src= {img} />
+            <br />
             <h3 className='desc'>{desc}</h3>
 
         </div>
@@ -44,6 +45,7 @@ const CourseItemStyled = styled.div`
         max-width: fit-content;
         margin-inline: auto;
         font-size: 18px;
+
     }
 
     h3{
@@ -64,15 +66,17 @@ const CourseItemStyled = styled.div`
     }
 
     img{
+        all:initial;
         box-shadow: none;
         display: block;
         margin: auto;
-
+        // padding-bottom:10px;
+        border: 1px solid #000000;
     }
     img:hover{
         -webkit-transform: none;
         transform: none;
-        padding-bottom:10px;
+
     }
     .desc{
         max-width: fit-content;
