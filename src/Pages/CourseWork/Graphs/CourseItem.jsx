@@ -20,7 +20,7 @@ const CourseItem = ({courseTitle, from, img, desc}) => {
             <h2>{from}</h2>
 
             <img height = '250px' width='250px' src= {img} />
-            <br />
+            <br/>
             <h3 className='desc'>{desc}</h3>
 
         </div>
