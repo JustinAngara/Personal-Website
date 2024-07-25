@@ -6,7 +6,7 @@ const AboutMe = () => {
     <AboutMeStyled>
         <br/>
         <Inset>
-            Woah what is this
+            {/* Woah what is this */}
         </Inset>
     </AboutMeStyled>);
 }

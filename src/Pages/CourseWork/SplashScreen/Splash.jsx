@@ -10,6 +10,7 @@ const Splash = () => {
     <SplashStyled>
         <div>
             <TypeAnimation
+                style={{ whiteSpace: 'pre-line', display:'block'}}
                 sequence={[
                     // Same substring at the start will only be typed once, initially
                     'System,out',
@@ -18,7 +19,8 @@ const Splash = () => {
                     100,
                     'System.out.println();',
                     'System.out.println("Hello, World!");',
-                    1000,
+                    'System.out.println("Hello, World!"); //by Justin',
+                    2000,
                     () => {
                         <div></div>
                         navigate("/");
@@ -28,6 +30,7 @@ const Splash = () => {
                 ]}
                 speed={30}
                 repeat={0}
+
 
             />
         </div>
@@ -40,7 +43,7 @@ export default Splash;
 const SplashStyled = styled.div`
     background-color:black;
     color: white;
-    font-size: 40px;
+    font-size: 3.2vw;
 
     //centering a div
     div{

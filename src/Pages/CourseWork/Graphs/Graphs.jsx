@@ -4,16 +4,20 @@ import resume from '@/Pages/CourseWork/Graphs/JAngara.jpg';
 import resumePDF from '@/Pages/CourseWork/Graphs/JustinAngaraResume.pdf';
 import Courses from './Courses.jsx'
 import Inset from "@/Common/PagesLayout/Inset.jsx";
+import { Container } from '@mui/material';
 const Graphs = () => {
 
     return (
         <GraphsStyled>
             <Inset>
-                <div className="resume">
-                    <img className='imgResume' src= {resume} onClick={()=> window.open(resumePDF, "_blank")} />
-                </div>
 
-                <div>
+                <div className="clear">
+                    <Container sx={{bgcolor:'#111111', mt:2}} maxWidth="lg">
+
+                        <embed width="100%" height="700" src={resumePDF} type="application/pdf"></embed>
+                    </Container>
+                </div>
+                <div className="course">
                     <h2>Classes Taken</h2>
                     <Courses />
                 </div>
@@ -25,32 +29,17 @@ const Graphs = () => {
 export default Graphs;
 
 const GraphsStyled = styled.div`
+    .clear{
+        all: initial;
 
-    .resume{
-        display: block;
-        margin: auto;
-        max-width: fit-content;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
+
 
     h2{
         padding-top:65px;
     }
-    .imgResume{
-        border-radius: 10px;
-        border: 2px solid #000000;
-
-    }
-    transform:scale(0.89);
-    .imgResume:hover{
-        transform: scale(1.1);
-        transition-duration: .5s;
-    }
-
     .course{
-        padding-top:50px;
 
+        // transform:scale(0.89);
     }
 `;

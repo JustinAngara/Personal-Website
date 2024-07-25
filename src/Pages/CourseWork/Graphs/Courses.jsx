@@ -22,6 +22,7 @@ export default Courses;
 
 
 const CoursesStyled = styled.div`
+
     div{
         width:700px;
 
@@ -38,6 +39,15 @@ const CoursesStyled = styled.div`
     .gridLayout{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 0px;
     }
+
+    // max-width: fit-content;
+    // margin-left: auto;
+    // margin-right: auto;
+     width: 100%;
+
+    transform:scale(.95);
+    // background-color:white;
+    justify-content:start;
 `;
