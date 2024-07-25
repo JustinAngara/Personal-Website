@@ -9,7 +9,7 @@ const Graphs = () => {
     return (
         <GraphsStyled>
             <div className="resume">
-                <img src= {resume} onClick={()=> window.open(resumePDF, "_blank")} />
+                <img className='imgResume' src= {resume} onClick={()=> window.open(resumePDF, "_blank")} />
             </div>
 
             <div>
@@ -36,13 +36,13 @@ const GraphsStyled = styled.div`
     h2{
         padding-top:65px;
     }
-    img{
+    .imgResume{
         border-radius: 10px;
         border: 2px solid #000000;
-        
+
     }
     transform:scale(0.89);
-    img:hover{
+    .imgResume:hover{
         transform: scale(1.1);
         transition-duration: .5s;
     }
