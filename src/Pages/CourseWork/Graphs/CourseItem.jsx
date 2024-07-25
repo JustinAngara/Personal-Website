@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
     }
  */
 const CourseItem = ({courseTitle, from, img, desc}) => {
-    console.log('inside course item');
+
 
     return (
     <CourseItemStyled>

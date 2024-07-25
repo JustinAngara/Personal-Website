@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import data from './CourseData.js';
 import CourseItem from './CourseItem.jsx';
 const Courses = () => {
-    console.log('this is our course data');
-    console.log(data);
+
     return (
     <CoursesStyled>
         <div className="gridLayout">
