@@ -3,19 +3,21 @@ import styled from 'styled-components';
 import resume from '@/Pages/CourseWork/Graphs/JAngara.jpg';
 import resumePDF from '@/Pages/CourseWork/Graphs/JustinAngaraResume.pdf';
 import Courses from './Courses.jsx'
-
+import Inset from "@/Common/PagesLayout/Inset.jsx";
 const Graphs = () => {
 
     return (
         <GraphsStyled>
-            <div className="resume">
-                <img className='imgResume' src= {resume} onClick={()=> window.open(resumePDF, "_blank")} />
-            </div>
+            <Inset>
+                <div className="resume">
+                    <img className='imgResume' src= {resume} onClick={()=> window.open(resumePDF, "_blank")} />
+                </div>
 
-            <div>
-                <h2>Classes Taken</h2>
-                <Courses />
-            </div>
+                <div>
+                    <h2>Classes Taken</h2>
+                    <Courses />
+                </div>
+            </Inset>
         </GraphsStyled>
     );
 };
