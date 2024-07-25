@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter, useNavigate } from "react-router-dom";
+import { Routes, Route, HashRouter, useNavigate} from "react-router-dom";
 
 //global styles
 import "@/Common/css/normalize.css";
@@ -56,6 +56,8 @@ const MyRoutes = () => {
                     </Route>
                 </Routes>
             </MediaQueryProvider>
+
+
 
         </HashRouter>
 

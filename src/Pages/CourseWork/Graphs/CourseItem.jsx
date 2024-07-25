@@ -67,7 +67,7 @@ const CourseItemStyled = styled.div`
     }
 
     img{
-        all:initial;
+       
         box-shadow: none;
         display: block;
         margin: auto;

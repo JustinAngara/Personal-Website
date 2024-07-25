@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import Inset from "@/Common/PagesLayout/Inset.jsx"
 import { TypeAnimation } from 'react-type-animation';
-
+import { useNavigate } from "react-router-dom";
 const Splash = () => {
 
-
+    const navigate = useNavigate();
 
     return (
     <SplashStyled>
@@ -12,19 +12,21 @@ const Splash = () => {
             <TypeAnimation
                 sequence={[
                     // Same substring at the start will only be typed once, initially
-                    'We produce food for Mice',
-                    1000,
-                    'We produce food for Hamsters',
-                    1000,
-                    'We produce food for Guinea Pigs',
+                    'System,out',
+                    200,
+                    'System.out',
+                    100,
+                    'System.out.println();',
+                    'System.out.println("Hello, World!");',
                     1000,
                     () => {
-                        navigate('/');
+                        <div></div>
+                        navigate("/");
                         console.log('now ended');
 
                     },
                 ]}
-                speed={50}
+                speed={30}
                 repeat={0}
 
             />
@@ -55,4 +57,5 @@ const SplashStyled = styled.div`
     top:0px;
     left:0px;
     z-index:1000;
+
 `;

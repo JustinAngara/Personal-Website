@@ -7,7 +7,7 @@ const Navbar = () => {
                 <MenuItem
                 name='home'
                 onClick={()=>{
-
+                        
                 }}
                 />
             </Menu>

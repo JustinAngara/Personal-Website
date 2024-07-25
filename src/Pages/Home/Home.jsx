@@ -2,17 +2,18 @@ import styled from "styled-components";
 import Inset from "@/Common/PagesLayout/Inset.jsx";
 
 import Slideshow from "./Slideshow/Slideshow";
-
+import AboutMe from './AboutMe/AboutMe.jsx';
 import Tabbed from "./Tabbed/Tabbed";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
 
     return (
         <HomeStyled>
-            <h1>Home</h1>
 
+            <h1>Home</h1>
+            <AboutMe />
             <Slideshow />
             <Inset>
                 <h1>
@@ -20,6 +21,7 @@ const Home = () => {
                 </h1>
                 <Tabbed />
             </Inset>
+
         </HomeStyled>
     );
 };
@@ -35,7 +37,5 @@ const HomeStyled = styled.div`
         justify-content: center;
         align-items: center;
     }
-
-
 
 `;
