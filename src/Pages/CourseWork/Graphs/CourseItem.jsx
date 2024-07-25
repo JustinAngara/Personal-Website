@@ -64,9 +64,15 @@ const CourseItemStyled = styled.div`
     }
 
     img{
-        all: initial;
+        box-shadow: none;
         display: block;
         margin: auto;
+
+    }
+    img:hover{
+        -webkit-transform: none;
+        transform: none;
+        padding-bottom:10px;
     }
     .desc{
         max-width: fit-content;
