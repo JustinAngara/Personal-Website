@@ -39,7 +39,7 @@ const GraphsStyled = styled.div`
     img{
         border-radius: 10px;
         border: 2px solid #000000;
-        box-shadow: 5px 5px 10px 1px #000000;
+        
     }
     transform:scale(0.89);
     img:hover{
