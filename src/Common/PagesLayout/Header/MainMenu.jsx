@@ -21,7 +21,7 @@ const MainMenu = ({ onClick }) => {
                         openInNewTab("https://www.linkedin.com/in/justinangara/");
                     }}/>
                     <Button circular icon='github'  size='huge' onClick={()=>{
-                        openInNewTab("https://www.github.com/in/justinangara/");
+                        openInNewTab("https://www.github.com/justinangara/");
                     }}/>
                     <Button circular icon='mail' size='huge' onClick={()=>{
                         window.open('mailto:justin.angara@gmail.com?subject=Subject&body= ');
