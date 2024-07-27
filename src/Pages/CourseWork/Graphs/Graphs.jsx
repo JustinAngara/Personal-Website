@@ -12,7 +12,7 @@ const Graphs = () => {
             <Inset>
 
                 <div className="clear">
-                    <Container sx={{bgcolor:'#111111', mt:2}} maxWidth="lg">
+                    <Container sx={{bgcolor:'#111111'}}>
 
                         <embed width="100%" height="700" src={resumePDF} type="application/pdf"></embed>
                     </Container>

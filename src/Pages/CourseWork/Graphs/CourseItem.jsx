@@ -41,6 +41,7 @@ const CourseItemStyled = styled.div`
     h1{
         background-color:#992049;
         color:#F5F5F5;
+        padding: 15px;
     }
     h2{
         max-width: fit-content;
@@ -67,7 +68,7 @@ const CourseItemStyled = styled.div`
     }
 
     img{
-       
+
         box-shadow: none;
         display: block;
         margin: auto;

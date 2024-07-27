@@ -11,7 +11,8 @@ import Slide from "./Slide";
 const Slideshow = () => {
     return (
         <SlideshowStyled>
-            <div>
+            <div className="block">
+
                 <Carousel infiniteLoop={true} autoPlay={true}>
                     {slidesData.map((slide) => {
                         return <Slide key={slide.id} slide={slide} />;
@@ -25,8 +26,10 @@ const Slideshow = () => {
 export default Slideshow;
 
 const SlideshowStyled = styled.div`
-    padding-top: 10px;
+    .block{
+        padding-top:600px;
 
+    }
     .carousel-inner &gt; .item &gt; img {
 
         height:750px;

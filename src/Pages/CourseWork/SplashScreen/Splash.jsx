@@ -24,11 +24,10 @@ const Splash = () => {
                     () => {
                         <div></div>
                         navigate("/");
-                        console.log('now ended');
-
+                        window.scrollTo(0, 0)
                     },
                 ]}
-                speed={30}
+                speed={50}
                 repeat={0}
 
 
