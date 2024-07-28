@@ -1,6 +1,7 @@
 import img1 from './images/wisc.png';
 import img2 from './images/pt.png';
 import img3 from './images/berk.png'
+import img4 from './images/la.png'
 let CourseData = [
 
     {
@@ -24,13 +25,13 @@ let CourseData = [
         img:img3,
         desc:' Learned the principles of effective database design and gain a general overview of database management systems (DBMS). The emphasis is on relational and NoSQL database management systems which have a variety of applications in modern website development, software development, and data science. Students learn dimensional, object-oriented, and object-relational architectures, along with best practices for managing data integrity and security.'
     },
-    // {
-    //     id: 4,
-    //     courseTitle:'Introduction to Databases x409.1',
-    //     from:'University of California, Berkeley',
-    //     img:img3,
-    //     desc:' Learned the principles of effective database design and gain a general overview of database management systems (DBMS). The emphasis is on relational and NoSQL database management systems which have a variety of applications in modern website development, software development, and data science. Students learn dimensional, object-oriented, and object-relational architectures, along with best practices for managing data integrity and security.'
-    // }
+    {
+        id: 4,
+        courseTitle:'Web Design I: HTML, CSS and JavaScript DESMAX 481.24B',
+        from:'University of California, Los Angeles',
+        img:img4,
+        desc:' Learned the world of modern web design that displays the industry standards and best practices for using HTML, CSS and JavaScript, the essential tools of a front-end web developer.'
+    }
 ];
 
 export default CourseData

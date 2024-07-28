@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Button } from 'semantic-ui-react'
 
 import React, { useRef, useState, useEffect } from 'react';
+import Overlay from './Overlay'
 import Section2 from './Section2';
 
 const Section1 = () => {
@@ -30,7 +31,9 @@ const Section1 = () => {
             <Button color='black' size='massive' icon='angle down' onClick={handleScrollButtonClick}></Button>
         </div>
 
-        <div className='block'><img src=''/></div>
+        <div className='block'>
+            <Overlay/>
+        </div>
         <div className='section2 center' ref={(el) => (divRefs.current[0] = el)}></div>
         <Section2 />
     </Section1Styled>);
@@ -46,9 +49,14 @@ const Section1Styled = styled.div`
 
     }
     .block{
-        padding-top:600px;
+        width:auto !important;
+        // padding-top:600px;
+        background-color: white;
+        height: 100vh;
+        
     }
     button{
         border-radius:50%
     }
+
 `;

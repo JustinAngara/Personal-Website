@@ -12,7 +12,7 @@ export const tabbedData = [
         title: 'About',
         text: `
         <p>
-            <b>Justin Angara</b> is an Computer Science student at the University of Wisconsin-Madison who's passionate about coding, learning, and mentoring others on technology. Enjoys building online games and biking.
+            <b>Justin Angara</b> is an Computer Science student at the University of Wisconsin-Madison who's passionate about coding, learning, and mentoring others on technology. Justin Enjoys building online games and biking.
         </P`,
     },
     {
@@ -21,7 +21,7 @@ export const tabbedData = [
         title: 'Mission',
         text: `
         <p>
-            <b>Justin</b> hopes to expand his programming abilities through diverse oppertunities!
+            <b>Justin</b> hopes to expand his programming skills through diverse oppertunities!
         </p>`,
     },
     {

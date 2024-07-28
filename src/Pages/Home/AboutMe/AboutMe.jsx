@@ -28,11 +28,11 @@ const AboutMeStyled = styled.div`
         padding-bottom:20px;
     }
     p{
-        font-size:5vh;
+        font-size:.6em;
         padding-left:15%;
         padding-right:15%;
     }
 
-    font-size:8vh;
+    font-size:4em;
 
 `;
