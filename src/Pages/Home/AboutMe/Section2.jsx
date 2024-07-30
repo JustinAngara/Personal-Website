@@ -1,27 +1,12 @@
 import styled from 'styled-components';
 import PropTypes from "prop-types";
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 
-import Experiences from './Experience/Experiences.jsx';
+
 
 const Section2 = () => {
     return (
     <Section2Styled>
-        <div className='blocked center'>
-            {`<Experience />`}<br /><br /><br />
-        </div>
-
-
-
-        <VerticalTimeline>
-            <Experiences />
-            
-
-            {/* BREAK/END of Timeline  */}
-            <VerticalTimelineElement iconStyle={{ background: 'rgb(240, 90, 70)', color: '#fff' }}/>
-        </VerticalTimeline>
 
     </Section2Styled>);
 }

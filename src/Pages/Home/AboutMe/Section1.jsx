@@ -31,9 +31,8 @@ const Section1 = () => {
             <Button color='black' size='massive' icon='angle down' onClick={handleScrollButtonClick}></Button>
         </div>
 
-        <div className='block'>
-            <Overlay/>
-        </div>
+        <div className='block'></div>
+        <Overlay/>
         <div className='section2 center' ref={(el) => (divRefs.current[0] = el)}></div>
         <Section2 />
     </Section1Styled>);
@@ -51,9 +50,9 @@ const Section1Styled = styled.div`
     .block{
         width:auto !important;
         // padding-top:600px;
-        background-color: white;
+        // background-color: white;
         height: 100vh;
-        
+
     }
     button{
         border-radius:50%

@@ -21,7 +21,7 @@ const Experiences = () => {
                                 (55 + 10 * Math.random()) + '%)', color: '#0000000' }}
                             date={e.date}
                             iconStyle={{ background: 'rgb(33, 243, 139)', color: '#000000' }}>
-   
+
                             <h3 className="vertical-timeline-element-title">{e.h}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{e.c}</h4>
                             <p>{e.p}</p>

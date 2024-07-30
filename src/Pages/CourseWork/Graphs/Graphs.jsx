@@ -5,6 +5,7 @@ import resumePDF from '@/Pages/CourseWork/Graphs/JustinAngaraResume.pdf';
 import Courses from './Courses.jsx'
 import Inset from "@/Common/PagesLayout/Inset.jsx";
 import { Container } from '@mui/material';
+import ExperienceMain from './Experience/ExperienceMain.jsx';
 const Graphs = () => {
 
     return (
@@ -17,6 +18,11 @@ const Graphs = () => {
                         <embed width="100%" height="700" src={resumePDF} type="application/pdf"></embed>
                     </Container>
                 </div>
+
+                <div className='Experience'>
+                    <ExperienceMain />
+                </div>
+
                 <div className="course">
                     <h2>Classes Taken</h2>
                     <Courses />

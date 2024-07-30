@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import data from './CourseData.js';
 import CourseItem from './CourseItem.jsx';
+
 const Courses = () => {
 
     return (
@@ -12,6 +13,7 @@ const Courses = () => {
                     return <CourseItem courseTitle = {e.courseTitle} from = {e.from} img = {e.img} desc = {e.desc}/>
                 })
             }
+
 
         </div>
 
@@ -31,15 +33,12 @@ const CoursesStyled = styled.div`
     }
 
 
-
-    coursetem{
+    .gridLayout{
         display: flex;
         flex-wrap: wrap;
-    }
-    .gridLayout{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0px;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     // max-width: fit-content;
