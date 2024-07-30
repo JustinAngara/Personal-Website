@@ -34,8 +34,7 @@ const CoursesStyled = styled.div`
 
 
     .gridLayout{
-        display: flex;
-        flex-wrap: wrap;
+
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
