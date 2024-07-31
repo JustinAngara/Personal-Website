@@ -16,14 +16,16 @@ const CourseItem = ({courseTitle, from, img, desc}) => {
     return (
     <CourseItemStyled>
         <div>
+
             <h1>{courseTitle}</h1>
             <h2>{from}</h2>
 
-            <img height = '25%' width='25%' src= {img} />
+            <img height = '20%' width='20%' src= {img} />
             <br/>
             <h3 className='desc'>{desc}</h3>
 
         </div>
+        <br/><br/><br/><br/>
     </CourseItemStyled>);
 }
 
@@ -39,6 +41,7 @@ const CourseItemStyled = styled.div`
         color: black;
     }
     h1{
+        font-size: 1.2em;
         background-color:#992049;
         color:#F5F5F5;
         padding: 15px;
@@ -46,21 +49,23 @@ const CourseItemStyled = styled.div`
     h2{
         max-width: fit-content;
         margin-inline: auto;
-        font-size: 1em;
+        font-size: 1.2em;
 
     }
 
     h3{
 
         padding-top:15px;
-        font-size: .95em;
+        font-size: .9em;
 
     }
     div{
-        padding-bottom: 40px;
-        max-width:90%;
+
+        // padding-bottom: 40px;
+
         border: 3px solid #000000;
         border-radius: 8px;
+        width: 65%;
 
         background: rgb(238,238,238);
         background: radial-gradient(circle, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
@@ -81,19 +86,14 @@ const CourseItemStyled = styled.div`
 
     }
     .desc{
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+
         border-top: 2px solid #000000;
         box-sizing: border-box;
         padding: 15px;
     }
 
-    //allows same size
-    width: 80%;
-    min-height: 300px;
-    margin: 0 auto;
-    display: -webkit-flex; /* Safari */
-    display: flex; /* Standard syntax */
+    // //allows same size
+    // display: -webkit-flex; /* Safari */
+    // display: flex; /* Standard syntax */
 
 `;

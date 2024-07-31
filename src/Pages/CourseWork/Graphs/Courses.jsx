@@ -3,49 +3,37 @@ import data from './CourseData.js';
 import CourseItem from './CourseItem.jsx';
 
 const Courses = () => {
-
-    return (
+  return (
     <CoursesStyled>
-        <div className="gridLayout">
-            {
-                data.map((e)=>{
-                    // courseTitle, from, img, desc
-                    return <CourseItem courseTitle = {e.courseTitle} from = {e.from} img = {e.img} desc = {e.desc}/>
-                })
-            }
-
-
-        </div>
-
-    </CoursesStyled>);
-}
+      <div className="course-grid">
+        {data.map((course) => (
+          <CourseItem
+            courseTitle={course.courseTitle}
+            from={course.from}
+            img={course.img}
+            desc={course.desc}
+          />
+        ))}
+      </div>
+    </CoursesStyled>
+  );
+};
 
 export default Courses;
 
-
 const CoursesStyled = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+  justify-content: space-between; /* Distribute items evenly */
+  padding-bottom: 40px;
 
-    div{
-        width:700px;
+  .course-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping within the grid */
+  }
 
-        padding-bottom: 40px;
-
-    }
-
-
-    .gridLayout{
-
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    // max-width: fit-content;
-    // margin-left: auto;
-    // margin-right: auto;
-     width: 100%;
-
-    transform:scale(.95);
-    // background-color:white;
-    justify-content:start;
+  @media (max-width: 68px) {
+    /* Adjust breakpoint as needed for your design */
+    flex-direction: column; /* Stack items on smaller screens */
+  }
 `;

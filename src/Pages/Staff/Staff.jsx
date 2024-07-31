@@ -13,11 +13,11 @@ const Staff = () => {
                     <h2>Chess MiniMax Algorithm <br/> (incorporated with real life moves and a table base)</h2>
                     <iframe width="75%" height="700" src="//jsfiddle.net/AngaraJustin/dxqk26nv/223/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                 </div>
-
+                <h1>My Videos</h1>
                 <div className='videos'>
-                    My Videos
 
-                    <br/><br/><ReactPlayer url='https://www.youtube.com/watch?v=LSpHdY5iI60&feature=youtu.be' />
+
+                    <br/><ReactPlayer       style={{width: "80%"}}url='https://www.youtube.com/watch?v=LSpHdY5iI60&feature=youtu.be' />
                 </div>
 
             </Inset>
@@ -33,11 +33,16 @@ const StaffStyled = styled.div`
         text-decoration: none;
         font-size: 14px;
     }
-    .proj{
+    h1{
         padding-top:50px;
     }
     .videos{
         font-size:2em;
-        padding-top:10%;
+        width:70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import resume from '@/Pages/CourseWork/Graphs/JAngara.jpg';
 import resumePDF from '@/Pages/CourseWork/Graphs/JustinAngaraResume.pdf';
 import Courses from './Courses.jsx'
+import Carousel from './CarouselCourse/Carousel.jsx';
 import Inset from "@/Common/PagesLayout/Inset.jsx";
 import { Container } from '@mui/material';
 import ExperienceMain from './Experience/ExperienceMain.jsx';
@@ -26,6 +27,7 @@ const Graphs = () => {
                 <div className="course">
                     <h2>Classes Taken</h2>
                     <Courses />
+                    {/* <Carousel /> */}
                 </div>
             </Inset>
         </GraphsStyled>
