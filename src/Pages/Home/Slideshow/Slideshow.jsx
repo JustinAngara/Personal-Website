@@ -11,7 +11,7 @@ import Slide from "./Slide";
 const Slideshow = () => {
     return (
         <SlideshowStyled>
-            <div className="block">
+            <div className="blocke">
 
                 <Carousel infiniteLoop={true} autoPlay={true}>
                     {slidesData.map((slide) => {
@@ -26,20 +26,24 @@ const Slideshow = () => {
 export default Slideshow;
 
 const SlideshowStyled = styled.div`
-    .block{
-        padding-top:600px;
-
+    .blocke{
+        // padding-top:600px;
+        // background-color:white;
     }
     .carousel-inner &gt; .item &gt; img {
 
-        height:750px;
-        width:750px;
+        height:50%;
+        width:50%;
         object-fit: contain;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     div{
-        width: 1200px; // or any other value you want
+        background-color:black;
+        width: 75%;
         margin: 0 auto; // this is actually centering the container
     }
 

@@ -5,9 +5,9 @@ import 'react-vertical-timeline-component/style.min.css';
 const ExperienceMain = () => {
     return (
     <ExperienceMainStyled>
-        <div className='blocked center'>
-            {`<Experience />`}<br /><br /><br />
-        </div>
+        <p className='blocked center'>
+            {`<Experience />`}
+        </p>
 
 
 

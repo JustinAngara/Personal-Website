@@ -5,7 +5,7 @@ const Slide = ({ slide }) => {
     const { title, image } = slide;
 
     return (
-        <SlideStyled>
+        <SlideStyled className=".image-container">
             <img src={image} alt={title} />
             <p className="legend">{title}</p>
 
@@ -24,4 +24,9 @@ const SlideStyled = styled.div`
     border-radius: 16px;
     border: 2px solid #000000;
     background-color:black;
-    `;
+    img{
+        margin: 0;
+
+    }
+
+`;

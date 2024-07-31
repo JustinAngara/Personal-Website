@@ -53,9 +53,16 @@ let timeData = [
     {
         id: 8,
         date: '2024',
+        h: 'St. Charles East High School',
+        c:'Graduated',
+        p:'Now graduated with 30+ incomming college credits'
+    },
+    {
+        id: 9,
+        date: '2024',
         h: 'University of Wisconsin-Madison',
         c:'First Year Education',
-        p:'Enrolled to the UW-Madison for my Computer Science degree (Sophomore Standing)'
+        p:'Enrolled to the UW-Madison for my Computer Science degree'
     },
 
 

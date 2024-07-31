@@ -17,9 +17,9 @@ const Section1 = () => {
 
     return (
     <Section1Styled>
-        <div className="question center">
+        <h2 className="question center">
             Justin Angara's Journey
-        </div>
+        </h2>
 
         <p>
             &emsp; I started my programming journey back in 2019 (age 13) with the programming language <b>Java</b>,
@@ -56,6 +56,9 @@ const Section1Styled = styled.div`
     }
     button{
         border-radius:50%
+    }
+    h1{
+
     }
 
 `;

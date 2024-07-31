@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Inset from "@/Common/PagesLayout/Inset.jsx"
 import StaffList from "./StaffList/StaffList.jsx"
+import ReactPlayer from 'react-player';
 const Staff = () => {
     return (
         <StaffStyled>
@@ -13,7 +14,11 @@ const Staff = () => {
                     <iframe width="75%" height="700" src="//jsfiddle.net/AngaraJustin/dxqk26nv/223/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                 </div>
 
-                
+                <div className='videos'>
+                    My Videos
+
+                    <br/><br/><ReactPlayer url='https://www.youtube.com/watch?v=LSpHdY5iI60&feature=youtu.be' />
+                </div>
 
             </Inset>
         </StaffStyled>
@@ -30,5 +35,9 @@ const StaffStyled = styled.div`
     }
     .proj{
         padding-top:50px;
+    }
+    .videos{
+        font-size:2em;
+        padding-top:10%;
     }
 `;

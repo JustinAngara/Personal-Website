@@ -14,7 +14,7 @@ export const slidesData = [
         title: 'Orientation',
     },
     {
-        id: 3,
+        id: 2,
         image: slide3,
         title: 'Breakfast of Champions',
     },
