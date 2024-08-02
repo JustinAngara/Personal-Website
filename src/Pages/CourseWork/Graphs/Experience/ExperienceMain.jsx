@@ -31,6 +31,7 @@ const ExperienceMainStyled = styled.div`
         font-size:4em;
         padding-top:15%;
         padding-bottom:10%;
+        width:95%;
     }
     .center {
         max-width: fit-content;

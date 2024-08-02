@@ -5,7 +5,7 @@ import CourseItem from './CourseItem.jsx';
 const Courses = () => {
   return (
     <CoursesStyled>
-      <div className="course-grid">
+      <div className="course-grid center">
         {data.map((course) => (
           <CourseItem
             courseTitle={course.courseTitle}
@@ -23,17 +23,24 @@ export default Courses;
 
 const CoursesStyled = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping on smaller screens */
-  justify-content: space-between; /* Distribute items evenly */
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-bottom: 40px;
 
   .course-grid {
     display: flex;
-    flex-wrap: wrap; /* Ensure wrapping within the grid */
+    flex-wrap: wrap;
+
   }
 
+    .center{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
   @media (max-width: 68px) {
-    /* Adjust breakpoint as needed for your design */
+
     flex-direction: column; /* Stack items on smaller screens */
   }
 `;

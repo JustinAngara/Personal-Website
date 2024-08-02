@@ -15,7 +15,7 @@ const CourseItem = ({courseTitle, from, img, desc}) => {
 
     return (
     <CourseItemStyled>
-        <div>
+        <div className='center'>
 
             <h1>{courseTitle}</h1>
             <h2>{from}</h2>
@@ -69,7 +69,7 @@ const CourseItemStyled = styled.div`
 
         background: rgb(238,238,238);
         background: radial-gradient(circle, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
-
+        
     }
 
     img{
@@ -91,6 +91,7 @@ const CourseItemStyled = styled.div`
         box-sizing: border-box;
         padding: 15px;
     }
+
 
     // //allows same size
     // display: -webkit-flex; /* Safari */

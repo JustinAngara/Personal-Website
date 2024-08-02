@@ -29,6 +29,8 @@ const Graphs = () => {
                     <Courses />
                     {/* <Carousel /> */}
                 </div>
+
+                
             </Inset>
         </GraphsStyled>
     );
