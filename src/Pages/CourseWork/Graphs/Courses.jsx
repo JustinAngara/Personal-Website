@@ -22,14 +22,15 @@ const Courses = () => {
 export default Courses;
 
 const CoursesStyled = styled.div`
-  display: flex;
+
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 40px;
 
   .course-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 1rem;
 
   }
 
@@ -39,8 +40,4 @@ const CoursesStyled = styled.div`
         margin-right: auto;
     }
 
-  @media (max-width: 68px) {
-
-    flex-direction: column; /* Stack items on smaller screens */
-  }
 `;

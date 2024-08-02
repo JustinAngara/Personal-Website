@@ -49,7 +49,7 @@ const SmallStyled = styled.div`
 
         z-index: 100;
 
-        background-color: #034444;
+        background-color: #000000;
 
         a {
             display: block;

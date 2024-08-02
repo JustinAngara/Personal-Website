@@ -21,6 +21,9 @@ const PagesLayout = () => {
 
     useEffect(() => {
         // call api or anything
+
+        document.title = "Justin's Portfolio"
+
         if(!isLoaded){
             navigate('/splash');
             setLoad(true);

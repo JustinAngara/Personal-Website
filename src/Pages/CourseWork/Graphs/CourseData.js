@@ -2,21 +2,21 @@ import img1 from './images/wisc.png';
 import img2 from './images/pt.png';
 import img3 from './images/berk.png'
 import img4 from './images/la.png'
+import img5 from './images/cb.png'
 let CourseData = [
-
     {
         id: 1,
-        courseTitle:'Front-End Software Development Bootcamp',
-        from:'Promineo Tech, Elgin Community College',
-        img:img2,
-        desc:'Explored framework integration to speed up development and build responsive grid layouts that meet today\'s requirements for mobiles,tablets, and desktops through a variety of different technologies. Created dynamic web applications using HTML, CSS, JavaScript, React, and other technologies. Learned the foundational skills to design and develop user-friendly interfaces. Gained hands-on experience with HTML, CSS, JavaScript, React, and other cutting-edge technologies used by top companies in the industry.',
-    },
-    {
-        id: 2,
         courseTitle:'Computer Science: 300',
         from:'University of Wisconsin-Madison',
         img:img1,
         desc:'Introduction to Object-Oriented Programming using classes and objects to solve more complex problems. Introduces array-based and linked data structures: including lists, stacks, and queues. Programming assignments require writing and developing multi-class (file) programs using interfaces, generics, and exception handling to solve challenging real world problems. Topics reviewed include reading/writing data and objects from/to files and exception handling, and command line arguments. Topics introduced: object-oriented design; class vs. object; create and define interfaces and iterators; searching and sorting; abstract data types; generic interfaces (parametric polymorphism); how to design and write test methods and classes; array based vs. linked node implementations; introduction to complexity analysis; recursion.'
+    },
+    {
+        id: 2,
+        courseTitle:'Front-End Software Development Bootcamp',
+        from:'Promineo Tech, Elgin Community College',
+        img:img2,
+        desc:'Explored framework integration to speed up development and build responsive grid layouts that meet today\'s requirements for mobiles,tablets, and desktops through a variety of different technologies. Created dynamic web applications using HTML, CSS, JavaScript, React, and other technologies. Learned the foundational skills to design and develop user-friendly interfaces. Gained hands-on experience with HTML, CSS, JavaScript, React, and other cutting-edge technologies used by top companies in the industry.',
     },
     {
         id: 3,
@@ -31,7 +31,14 @@ let CourseData = [
         from:'University of California, Los Angeles',
         img:img4,
         desc:' Learned the world of modern web design that displays the industry standards and best practices for using HTML, CSS and JavaScript, the essential tools of a front-end web developer.'
-    }
+    },
+    {
+        id: 5,
+        courseTitle:'AP Computer Science A (5)',
+        from:'College Board',
+        img:img5,
+        desc:'AP Computer Science A is an introductory college-level computer science course. Students cultivate their understanding of coding through analyzing, writing, and testing code as they explore concepts like modularity, variables, and control structures.'
+    },
 ];
 
 export default CourseData
