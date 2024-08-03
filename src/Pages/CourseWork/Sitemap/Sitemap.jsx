@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Sitemap = () => {
     return (
     <SitemapStyled>
-        this is a test please work
+        <div>IGNORE NOT FINISHED</div>
     </SitemapStyled>);
 }
 
