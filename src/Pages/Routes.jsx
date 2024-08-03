@@ -20,6 +20,7 @@ import Essays from "./CourseWork/Essays/Essays.jsx";
 import ResponsiveDesign from "./CourseWork/ResponsiveDesign.jsx";
 import Graphs from "./CourseWork/Graphs/Graphs.jsx"
 import SplashScreen from "./CourseWork/SplashScreen/Splash.jsx";
+import Sitemap from "./CourseWork/sitemap/Sitemap.jsx";
 const MyRoutes = () => {
 
     return (
@@ -32,7 +33,7 @@ const MyRoutes = () => {
                         <Route element={<Contact />} path="contact" />
                         <Route element={<Contact />} path = "resume"/>
                         <Route element={<SplashScreen />} path = "splash"/>
-
+                        <Route element={<Sitemap />} path = "sitemap"/>
 
                         <Route
                             element={<Graphs />}
@@ -45,6 +46,10 @@ const MyRoutes = () => {
                             <Route
                                 element={<SplashScreen />}
                                 path = "splash"
+                            />
+                            <Route
+                                element={<Sitemap />}
+                                path = "sitemap"
                             />
 
                             <Route
