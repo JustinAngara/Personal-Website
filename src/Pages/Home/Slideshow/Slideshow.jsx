@@ -11,7 +11,7 @@ import Slide from "./Slide";
 const Slideshow = () => {
     return (
         <SlideshowStyled>
-            <div className="blocke">
+            <div className="block">
 
                 <Carousel infiniteLoop={true} autoPlay={true}>
                     {slidesData.map((slide) => {

@@ -21,12 +21,10 @@ const PagesLayout = () => {
 
     useEffect(() => {
         // call api or anything
-
-        document.title = "Justin's Portfolio"
-
         if(!isLoaded){
             navigate('/splash');
             setLoad(true);
+            document.title = "Justin's portfolio";
         }
     });
     return (
@@ -34,9 +32,9 @@ const PagesLayout = () => {
 
             <Header />
 
-            <main>
-                <Background />
-            </main>
+                <main>
+                    <Background />
+                </main>
             <Footer />
 
         </PagesLayoutStyled>

@@ -5,13 +5,36 @@ import Inset from "../Inset.jsx";
 import SiteLogo from "../SiteLogo/SiteLogo.jsx";
 import MainMenu from "./MainMenu.jsx";
 import Navbar from "./Navbar.jsx";
+import { Button, Icon } from 'semantic-ui-react'
+import React, { useRef, useState, useEffect } from 'react';
 const MediumLarge = () => {
+    const [visible, setVisible] = useState(false)
+
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 300){
+        setVisible(true)
+      }
+      else if (scrolled <= 300){
+        setVisible(false)
+      }
+    };
+
+    const scrollToTop = () =>{
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+          /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    window.addEventListener('scroll', toggleVisible);
     return (
         <MediumLargeStyled className="MediumLarge">
             <Inset>
                 <div className="inset">
                     <div className="menus">
-                        {/* <Navbar /> */}
                         <MainMenu></MainMenu>
                     </div>
                     <div className="logo">
@@ -20,6 +43,11 @@ const MediumLarge = () => {
 
                 </div>
             </Inset>
+
+            <div className='scrollUp'>
+                {/* this is where the button of sticky goes to  */}
+                <Button circular icon='angle up' size='massive' color='teal' onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}} />
+            </div>
         </MediumLargeStyled>
     );
 };
@@ -77,4 +105,11 @@ const MediumLargeStyled = styled.div`
             }
         }
     }
+    .scrollUp{
+        position: fixed;
+        bottom:10%;
+        right:5%;
+
+    }
+
 `;

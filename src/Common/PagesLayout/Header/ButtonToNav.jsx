@@ -13,6 +13,7 @@ const ButtonToNav = ({pathObj}) => {
         <div>
             <Button basic inverted color='black' animated size='medium' onClick={()=>{
                 navigate(pathObj[0]);
+                scrollDown()
             }}>
 
                 <ButtonContent visible>{pathObj[1]}</ButtonContent>
@@ -24,6 +25,10 @@ const ButtonToNav = ({pathObj}) => {
 
     </ButtonToNavStyled>);
 }
+const scrollDown = () => {
+    window.scrollBy({ top: 525, behavior: "smooth" });
+}
+
 
 export default ButtonToNav;
 

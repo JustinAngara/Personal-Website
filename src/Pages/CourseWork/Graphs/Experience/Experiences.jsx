@@ -17,8 +17,8 @@ const Experiences = () => {
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"
                             contentStyle={{ background:"hsl(" + 360 * Math.random() + ',' +
-                                (20 + 50 * Math.random()) + '%,' +
-                                (55 + 10 * Math.random()) + '%)', color: '#0000000' }}
+                                (50 + 50 * Math.random()) + '%,' +
+                                (35 + 10 * Math.random()) + '%)', color: '#0000000' }}
                             date={e.date}
                             iconStyle={{ background: 'rgb(33, 243, 139)', color: '#000000' }}>
 

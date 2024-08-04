@@ -12,5 +12,5 @@ export default Sitemap;
 
 
 const SitemapStyled = styled.div`
-
+    height:100vh;
 `;

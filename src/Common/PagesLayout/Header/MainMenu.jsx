@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useEffect, useRef } from "react";
 import { ButtonContent, Button, Icon, Dropdown } from 'semantic-ui-react'
-import { useNavigate } from 'react-router-dom';
-import ReactPlayer from "react-player";
 import NavBtn from "./ButtonToNav.jsx"
 
 const MainMenu = ({ onClick }) => {
@@ -33,6 +32,8 @@ const MainMenu = ({ onClick }) => {
         </MainMenuStyled>
     );
 };
+
+
 
 const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -73,5 +74,7 @@ const MainMenuStyled = styled.nav`
 
     border-radius:10px;
     box-shadow: 6px 4px 18px 0px #000000;
+    // position:fixed;
+    // top:0;
 
 `;

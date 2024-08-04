@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const Section2 = () => {
     return (
     <Section2Styled>
-
+        
     </Section2Styled>);
 }
 
@@ -22,13 +22,8 @@ const Section2Styled = styled.div`
         padding-top:15%;
     }
     // padding-top:50px;
-    .fade-in {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
 
-    .fade-in.active {
-        opacity: 1;
-    }
+    // background-color:white;
+
 
 `;

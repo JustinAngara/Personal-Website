@@ -6,7 +6,7 @@ let timeData = [
         date: '2019',
         h: 'Java',
         c:'Personal',
-        p:'This was the first programming language that I learned'
+        p:'The first programming language that I learned'
     },
     {
         id: 2,
@@ -20,49 +20,49 @@ let timeData = [
         date: '2022',
         h: 'ReactJS',
         c:'Remote - Coding Bootcamp',
-        p:'Learned relevant technologies used in the workforce (ReactJS practices, front-end libraries, ...), and helped show peers my programming knowledge'
+        p:'Learned relevant technologies used in the workforce (ReactJS practices, front-end libraries, ...), and leveraged my programming knowledge to mentor my peers'
     },
     {
         id: 4,
         date: '2022-24',
         h: 'Code Club President',
         c:'In-person Club',
-        p:'Group leader and organizer for competitions; mentoring students; held CS office hours; grew club membership (15+ members); showcased workforce code'
+        p:'Group leader and organizer for competitions; mentored students; held CS office hours; grew club membership (15+ members); showcased workforce code'
     },
     {
         id: 5,
         date: '2022-23',
-        h: 'AP Computer Science Teacher Assistant',
+        h: 'AP Computer Science Teacher\'s Assistant',
         c:'In-person Class',
-        p:'Group leader and organizer for competitions; mentoring students; held CS office hours; grew club membership (15+ members); showcased workforce code'
+        p:'Provided in-depth explanations of class subjects and concepts such as OOP concepts and Java programming assignments'
     },
     {
         id: 6,
         date: '2023',
         h: 'Fall Flight Test Intern',
         c:'Remote - Comet',
-        p:'Analyzed data trends within our projects including the coding & business side; volunteered to help my cohort (~15 members); learned industry practice'
+        p:'Analyzed data trends and gained experience on the coding & business side; mentored my cohort (~15 members); learned industry best practices'
     },
     {
         id: 7,
         date: '2023',
         h: 'C++',
         c:'Personal',
-        p:'Started to learn C++ for the  low-level capabilities and practiced with the Windows API'
+        p:'Started learning C++ for experience on low-level capabilities and utilized the Windows API'
     },
     {
         id: 8,
         date: '2024',
         h: 'St. Charles East High School',
         c:'Graduated',
-        p:'Now graduated with 30+ incomming college credits'
+        p:'Graduated with 30+ incomming college credits'
     },
     {
         id: 9,
         date: '2024',
         h: 'University of Wisconsin-Madison',
         c:'First Year Education',
-        p:'Enrolled to the UW-Madison for my Computer Science degree'
+        p:'Enrolled at UW-Madison for my Computer Science degree'
     },
 
 
