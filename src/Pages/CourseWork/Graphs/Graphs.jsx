@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import resume from '@/Pages/CourseWork/Graphs/JAngara.jpg';
-import resumePDF from '@/Pages/CourseWork/Graphs/JustinAngaraResume.pdf';
+import resumePDF from '@/Pages/CourseWork/Graphs/Justin_Angara_Resume.pdf';
 import Courses from './Courses.jsx'
 import Carousel from './CarouselCourse/Carousel.jsx';
 import Inset from "@/Common/PagesLayout/Inset.jsx";
@@ -30,7 +30,7 @@ const Graphs = () => {
                     {/* <Carousel /> */}
                 </div>
 
-                
+
             </Inset>
         </GraphsStyled>
     );

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Inset from "@/Common/PagesLayout/Inset.jsx"
 import StaffList from "./StaffList/StaffList.jsx"
 import ReactPlayer from 'react-player';
+import Video from './Video/Video.jsx';
 const Staff = () => {
     return (
         <StaffStyled>
@@ -17,7 +18,9 @@ const Staff = () => {
                 <div className='videos'>
 
 
-                    <br/><ReactPlayer       style={{width: "80%"}}url='https://www.youtube.com/watch?v=LSpHdY5iI60&feature=youtu.be' />
+                    <Video link='https://www.youtube.com/watch?v=LSpHdY5iI60&feature=youtu.be'/>
+                    <Video link='https://youtu.be/81xeJecRxg0' />
+                    <Video link='https://youtu.be/BIgNc-o56SU' />
                 </div>
 
             </Inset>
@@ -39,7 +42,7 @@ const StaffStyled = styled.div`
     .videos{
         font-size:2em;
         width:70%;
-        display: flex;
+
         justify-content: center;
         align-items: center;
     }
