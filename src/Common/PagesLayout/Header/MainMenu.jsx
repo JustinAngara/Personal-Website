@@ -50,8 +50,8 @@ MainMenu.propTypes = {
 
 const MainMenuStyled = styled.nav`
 
-    display: grid;
-    grid-template-columns: 0fr 0fr 0fr 0fr;
+    // display: grid;
+    // grid-template-columns: 0fr 0fr 0fr 0fr;
     .socials{
 
 

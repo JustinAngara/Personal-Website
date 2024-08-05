@@ -4,8 +4,9 @@ import ReactPlayer from 'react-player';
 const Video = ({ link }) => {
     return (
     <VideoStyled>
-        <br/><ReactPlayer style={{width: "80%"}}url={link} />
-        
+        <br/><ReactPlayer style={{width: "90%"}}url={link} />
+        {/* will add description soon */}
+
     </VideoStyled>);
 }
 
@@ -17,5 +18,5 @@ Video.propTypes = {
 };
 
 const VideoStyled = styled.div`
-
+    // background-color:black;
 `;
