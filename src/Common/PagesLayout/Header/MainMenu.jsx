@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import { NavLink, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef,useState } from "react";
 import { ButtonContent, Button, Icon, Dropdown } from 'semantic-ui-react'
 import NavBtn from "./ButtonToNav.jsx"
 
-const MainMenu = ({ onClick }) => {
+const MainMenu = ({ handle }) => {
 
     return (
-
         <MainMenuStyled>
             <ul>
-                <li> <NavBtn pathObj = {["/", "Home"]}/> </li>
+                <li> <NavBtn pathObj = {["/", "Home"]} /> </li>
                 <li> <NavBtn pathObj = {["/course-work", "Resume"]}/> </li>
                 <li> <NavBtn pathObj = {["/staff", "Projects"]}/> </li>
                 <li> <NavBtn pathObj = {["/contact", "Contact"]}/> </li>
@@ -36,6 +35,7 @@ const MainMenu = ({ onClick }) => {
 
 
 const openInNewTab = (url) => {
+    toggle(true);
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
 }

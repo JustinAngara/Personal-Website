@@ -17,11 +17,16 @@ const Small = () => {
         showMenuUpdate(false);
     };
 
+    const handleButtonClick = () => {
+        // Logic to execute when a button is clicked
+        console.log('Button clicked from child component');
+    };
+
     return (
         <SmallStyled>
             <Hamburger toggle={toggle} />
             <SiteLogo />
-            {showMenu && <MainMenu onClick={hideMenu} />}
+            {showMenu && <MainMenu handle={handleButtonClick} />}
         </SmallStyled>
     );
 };

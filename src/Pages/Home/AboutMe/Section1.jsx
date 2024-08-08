@@ -17,9 +17,9 @@ const Section1 = () => {
 
     return (
     <Section1Styled>
-        <div className="question center">
+        <p className="question center">
             Justin Angara's Journey
-        </div>
+        </p>
 
         <p>
             &emsp; I started my programming journey back in 2019 (age 13) with the programming language <b>Java</b>,
@@ -44,8 +44,7 @@ export default Section1;
 
 const Section1Styled = styled.div`
     .question{
-        font-size:6vh;
-
+        font-size:1em;
     }
     .block{
         width:auto !important;
